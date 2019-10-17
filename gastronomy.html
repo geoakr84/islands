@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Leisure</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.w3-hover-opacity {cursor: pointer;}
+
+#myNavbar{
+	position:relative;
+	left:20px;
+}
+.apptop{
+	
+}
+.apptop img{
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+}
+
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+ 
+ <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+  	<div class="w3-bar" id="myNavbar">
+    	<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button" style="font-size:18px; font-family: Impact, Charcoal, sans-serif"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="#essentials" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-th"></i>   ESSENTIALS</a>
+        <a href="#wheretogo" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif"><i class="fa fa-th"></i> WHERE TO GO</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-envelope"></i>  CONTACT</a>
+   </div>
+   
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    	<a href="#essentials" class="w3-bar-item w3-button" onClick="toggleFunction()">ESSENTIALS</a>
+        <a href="#wheretogo" class="w3-bar-item w3-button" onClick="toggleFunction()">WHERE TO GO</a>
+        <a href="#footer" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
+    </div>
+ </div> <!-- end of w3-top navbar -->
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img class="w3-padding-24" src="img/front_image.jpg" style="width:100%;height:auto">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      <div class="apptop">
+      	<h3><strong>Gastronomy</strong></h3>
+        	<p>
+            Greeks approach food with a combination of seriousness and nostalgia, inevitably thinking back to the dishes they were raised on. They don’t eat to live but rather live to eat, and a meal is almost always a social, convivial occasion, which revives the original meaning of companionship – people who broke bread together. Greek cuisine offers unique treats. 
+            </p>
+            <img class="center w3-border w3-padding" src="img/pork-meat.jpg" height="auto">            
+            <p>
+            There is no notion of the western ‘eat and run’ syndrome. Here in Greece, a lunch or dinner can last for hours, and the more people gathered at the table the better; for good food and good wine bring good talk. So, sit down and prepare to enjoy yourself. You’ll start with a series of hors d’oeuvres, known as the mezedes. Presented on little plates and designed to whet your appetite, they may be accompanied by ouzo, the national drink, schnapps-like tsipouro or, of course, wine.
+            </p>
+            
+            <p>
+            They may arrive in no particular order, but cold dishes are apt to be served first, and fish before meat and they are meant to be shared, not claimed by just one person. One thing that will strike you immediately is the freshness and excellence of the local produce: the just-picked salads, the freshly caught seafood, the meat from livestock raised on a hillside not factory-farmed.
+            </p>
+            
+            </div>  
+                         
+        
+            <p>
+            So, what are the basic elements of Greek cuisine? Salt from the ubiquitous sea, olive oil, our liquid gold that contains all the goodness of the sun, and bread, the staff of life, ground from wheat, the age-old crop of the land.
+            </p>
+            <p>
+            <strong>Traditional Greek Cuisine</strong><br>
+From ancient times to today, Greek eating habits have changed so radically that it’s difficult to summarize the gastronomic culture of the country in a few words. Although it’s highly likely that Homer’s heroes would feel at home at a Greek Easter, they would not recognise the lemons, potatoes or tomatoes, and much more. Since those days, so many new fruits and vegetables have arrived on these shores, so many people have introduced different ways of cooking them, from both East and West, that tracing the roots and trends of traditional Greek cuisine is complicated.
+            </p>
+            <p>
+            But one thing has always been true: the emphasis on authentic raw ingredients, unadulterated and grown locally – simple dishes, cooked slowly and without fussy sauces, seasoned with herbs and olive oil rather than exotic spices, with love and imagination.
+            </p>
+            
+            <img class="center w3-border w3-padding" src="img/mousaka.jpg" height="auto">
+           
+<p>
+          <strong>Modern Greek Cuisine</strong><br>
+Over the past couple of decades a new wave of chefs has sprung up, committed to recreating the traditional Greek cuisine they were brought up on but with new combinations and techniques. Often trained abroad, where they have come into contact with other food cultures, they are two-way ambassadors. As they return, they experiment with new approaches to traditional recipes, changing techniques and creating a modern Greek cuisine. Domestic production which had been neglected is also being rediscovered, transformed and redesigned.
+            </p>
+            <p>
+            As examples, we have the rare Cretan skolymbous, a wild green that costs more than fillet mignon, sweet potatoes from Trikala, chestnuts from Volos, farmed black pork and mountain goat from Crete. An intriguing fusion: the old, with its historic value, blended with new ideas, to give it new life; innovative, with surprising revelations, and excitingly fresh. You’ll be impressed by the inventiveness of the new generation of cooks in the fine restaurants of the mainland and islands, from Crete to Corfu, from Halkidiki to Laconia. Seek them out and sample their offerings. We promise you’ll be asking for a second helping.            
+            </p>
+            <p>
+            <strong>The Aegean – flavours of sun and sea</strong><br>
+            The numerous islands of the Aegean, one of the largest and most important island groups in the world, is a land formed from the sun, the sea and the refreshing wind. The specific microclimate of each island has contributed to the creation of unique products, some of which cannot be found anywhere else in the world. Thus, each island is its own unique culinary paradise. 
+
+The cuisine of the Cyclades is primordial and reflects its deep cultural history. With its distinctive character, heady aromas, and fruit and vegetables ripened in bright sun, it is a separate chapter of the Greek gastronomic tradition and indeed of world culinary history.
+            </p>
+            <p>The famous Aegean <strong>‘makarounes’</strong> (hand-made fresh pasta with caramelized onions), Kassian pilaf, <strong>'sgardoumia’</strong> (offal soup) from Santorini, Karpathos ‘vyzanti’ (stuffed lamb or goat with bulghur wheat cooked in a wood-burning oven), Serifos <strong>‘marathotiganites’</strong> (fennel rissoles), <strong>‘dolmadakia’</strong> made with vine leaves and herbs, <strong>‘melitera’</strong> (sweet cheese pies with vanilla) from Anafi, and Sifnos’s ‘melopita’ (honey pie), are some of the thousands of dishes that can be sampled by the traveller in the warm embrace of the Aegean.</p>
+            <p>The beauty of the Cyclades islands has become a tourist attraction not only for travellers but also for people involved creatively in the culinary arts, who come here to expand their knowledge and show their love of Greek cuisine. The restaurants of the Cyclades islands occupy a prominent place in international rankings and are highly respected by devotees of haute cuisine and authentic eating experiences.</p>
+            
+            <p><strong>The Ionian Islands – a taste of the cosmopolitan</strong><br>
+            The flavours of the Ionian Islands, with their Italian names and distinctive character, form a separate chapter in the Greek culinary arts. ‘Savoro’, which means "sour", is a wonderful recipe with rosemary and vinegar widely used in the Ionian Islands to season and preserve fish, as well as vegetables. It is the trademark of Ionian Island cuisine.          
+            
+            </p>
+            <p><strong>‘Bourdetto’</strong> (scorpion fish cooked in a red-hot spicy tomato sauce), <strong>‘sofrito’</strong> (veal steak slow cooked in a white wine, garlic and herb sauce), ‘pastitsada’ (braised beef, pork or rooster in a spicy cinnamon tomato sauce usually served with rigatoni pasta), <strong>‘stifado’</strong> (beef stew with baby onions), <strong>‘strapatsada’</strong> (scrambled eggs with tomato and feta), ‘tsigareli’ (wild greens or cabbage in spicy tomato sauce), <strong>‘pastitsio tis nonas’</strong> (baked pasta and mince with a béchamel sauce topping), <strong>‘bakaliaros me agiada'</strong> (de-salted preserved codfish fillets with <strong>‘skordalia’</strong> garlic sauce) are some of the recipes that incorporate centuries of history and culture. Superb wines and unique drinks and beverages like kumquat liqueur and ginger beer, and desserts and sweets such as <strong>‘pantespani’</strong> syrup-soaked sponge cakes, <strong>‘mandola’</strong> nougat and <strong>‘pasteli’</strong> sesame seed and honey bars accompany the rich yet delicate gastronomic cultural traditions of the Ionian Islands.</p>
+        <p>
+          <strong>Crete – the elixir of life</strong><br>
+          Crete, the uniquely Mediterranean island, with its long history, seductive natural surroundings and proud inhabitants, is fast becoming a destination that offers great excitement as an authentic gastronomic experience. A culinary tour of Crete is a journey into the culture of the island. 
+
+Discovery of the secrets of Cretan cuisine is an invitation to sample the art of living. The traditional pilaf rice of Chania prepared with rooster or beef, the famous "ofto" roasted baby goat which is served almost everywhere in Crete, fresh salads and traditional ‘dakos’ (barley rusks with fresh tomato, soft white cheese and olive oil) are just some of the recipes of traditional Cretan cuisine.
+          </p>
+        <img class="center w3-border w3-padding" src="img/ntakos_560.jpg" height="auto">
+<p>
+          In <span style="color:#0CF">Chania</span>, <span style="color:#0CF">Heraklion</span>, <span style="color:#0CF">Rethymno</span>, <span style="color:#0CF">Ierapetra</span>, <span style="color:#0CF">Siteia</span> and also in the smaller towns, high quality <strong>restaurants</strong> have been established which make use of top quality <strong>healthy ingredients</strong>. This has served to promote the reputation of Cretan cooking and create what could be called a new golden age for Cretan gastronomy.
+        </p>
+       </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>

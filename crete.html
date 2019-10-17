@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Crete</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: "Cambria Math";
+	font-size: 14px;
+}
+#myNavbar{
+	position:relative;
+	left:20px;
+}
+
+div.polaroid {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(10deg);
+  opacity: 0.8;
+  transition: transform 1s;
+  transition-timing-function: ease;
+}
+
+div.polaroid2 {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(-10deg);
+  opacity: 0.8;
+  transition: transform 1s;
+  transition-timing-function: ease;
+}
+
+div.polaroid:hover {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(0deg);
+  transform: scale(1.1,1.1);
+  opacity: 1;
+  cursor:pointer;
+}
+
+div.polaroid2:hover {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(0deg);
+  transform: scale(1.1,1.1);
+  opacity: 1;
+  cursor:pointer;
+}
+
+div.container2 {
+  padding: 10px;
+  margin-bottom:50%;
+  background-color:rgba(204,204,204,0.5);
+}
+
+ /* Style the Image Used to Trigger the Modal */
+    .modalImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .modalImg:hover {opacity: 1;}
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 3; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+    
+    /* Add Animation - Zoom in the Modal */
+    .modal-content, #caption { 
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 50px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .modal-content {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+ 				<!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                <!-- The Close Button -->
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                </div>
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:1;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+ 
+ <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+  	<div class="w3-bar" id="myNavbar">
+    	<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button" style="font-size:18px; font-family: Impact, Charcoal, sans-serif"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="index.html#essentials" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-th"></i>   ESSENTIALS</a>
+        <a href="index.html#wheretogo" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif"><i class="fa fa-th"></i> WHERE TO GO</a>
+        <a href="index.html#footer" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-envelope"></i>  CONTACT</a>
+   </div>
+   
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    	<a href="index.html#essentials" class="w3-bar-item w3-button" onClick="toggleFunction()">ESSENTIALS</a>
+        <a href="index.html#wheretogo" class="w3-bar-item w3-button" onClick="toggleFunction()">WHERE TO GO</a>
+        <a href="index.html#footer" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
+    </div>
+ </div> <!-- end of w3-top navbar -->
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <div class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img class="w3-padding-24" src="img/front_image.jpg" style="width:100%;height:auto">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h2 class="w3-jumbo w3-hide-small"  style="text-shadow: 2px 2px">Live your myth</h2>
+        <h2 class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px">in Greece</h2>
+    </div>
+  </div>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	<div class="w3-row">
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Crete</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;font-family: 'Agency FB';">The largest island in Greece. Crete is a feast for the senses: wild natural beauty and thousands of years               of culture, history and exquisite cuisine. Find out about the top things to do in Crete.</h5>
+           <p> “The mystery of Crete runs deep. Whoever sets foot on this island senses a mysterious force coursing                warmly and beneficently through their veins, sensing their soul beginning to grow” wrote Nikos Kazantzakis, Crete’s most celebrated author, in Report to              Greco. On the south side of the Aegean is an island that is mystical, warm and welcoming, pure and generous. Crete captures the spirit of Greece, and                  enchants everyone who visits it. Heraklion, Rethymno, Chania, Agios Nikolaos, Elounda, Ierapetra, Malia, Hersonissos, Sitia, Sfakia: an island with             numerous destinations and thousands of vibrant images. Crete captivates and seduces the senses with its impressive and majestic landscape, with its             open-hearted and vivacious spirit, its rich history, its world-famous cuisine and its hospitable people.</p>
+           
+           <p><b>The most seductive beaches in Crete </b><br />Pictures of the heavenly Balos lagoon in Chania are featured in all the travel guides and glossies, as is the endless beauty of famous Falarsana, one of the best beaches in the Mediterranean. Exotic Elafonissos attracts thousands of visitors every year. Crete’s ‘hidden jewel’ and the largest beach on the island is located on the outskirts of Rethymno – 12km of sand that boasts a Blue Flag.</p>
+
+<p>Episkopi and Petres have fervent young fans, while noteworthy in the south are the alluring beaches of Preveli, Plakia, Ligres, Triopetra and Agios Pavlos, with its huge sand dunes. In Heraklion, Malia and Hersonissos attract tourists from all over the world. Endless kilometres of golden coastline surround Ierapetra, in the Lassithi prefecture. The celebrated palm forest in Vai is one of the most spectacular sights in Crete, where palm trees embrace the golden sand, while the beaches of Elounda and those around Agios Nikolaos are not to be missed.</p>
+		<p><b>Crete: A priceless gift of culture and history</b><br /> 
+On Crete, you’ll find some of the most significant attractions in Greece: famous archaeological sites such as the Minoan palaces of Knossos, Phaistos, Malia and Kato Zakros. You’ll also visit important monasteries, some built in the 15th century or even earlier, including Preveli monastery in southern Rethymno, the monasteries in southern Heraklion and the historic Arkadi and Toplous monasteries.
+        
+        </p>
+        <p>
+        You’ll be transported to another time wandering around  the castles of the region erected by Venetians and Byzantines. Particularly noteworthy are Kastelli in Chania, the Fortezza in Rethymno, the castle of Heraklion, Frangokastello in southern Chania, the Kazarma castle in Sitia, and the Monte Forte in Lassithi. More of the island’s riches are displayed in its many museums. Visit those in Chania, Rethymno and Heraklion. Impressive also are the Cretaquarium, the Museum of Natural History and the Historical Museum of Crete. In Myrtia, there is the Nikos Kazantzakis Museum and in Fodele you’ll find the El Greco Museum.
+        </p>
+        <p>
+        <b>Crete: Home of the Mediterranean diet </b><br />
+Here you’ll eat to your heart’s content, whether enjoying gourmet gastronomy, or simply a homemade rusk salad with sea salt, extra-virgin olive oil, raw artichokes and cheese. Discover the secrets of a Cretan diet – the best example of the Mediterranean diet, long been considered, internationally, as the healthiest.
+</p>
+<p>
+Some of Crete’s many famous products are the local graviera (a piquant cheese), herbs and salad greens such as stamnagathi (a wild chicory), as well as dozens of types of wild and sweet greens for braising, staka (think clotted cream made from sheep’s milk and used in pilafs) and assorted savoury pies and sweets. Signature dishes that you must try before you leave are dakos (a rusk salad with tomatoes and myzithra cheese), fried snails, kalitsounia (sweet cheese pastries), savoury cheese pies, egg-lemon lamb with artichoke hearts and the famous gamopilafo (wedding pilaf). Crete is known for its tsikoudia (schnapps-like firewater) – all the locals will treat you to a few glasses  and many make their own. They start drinking it early in the afternoon and it flows until late at night, at the tavernas, cafes, festivals and fairs. Be sure to bring a bottle home.
+        </p>
+        </div> <!-- end of two-third -->
+        
+        <div class="w3-third images" style="margin-left:0%;">
+        
+        	<div class="polaroid">
+        		<img class="modalImg" id="myImg1"  src="img/agios_nikolaos.jpg" alt="Saint Nicolaos" style="width:100%;height:auto;max-width:250px;">
+                <div class="container2">
+    				<p>Saint Nicolaos</p>
+  				</div>
+            </div>
+            
+            <div class="polaroid2">
+            <img class="modalImg" id="myImg2"  src="img/chaniabeach.jpg" alt="Famous beach in Chania" style="width:100%;height:auto;max-width:250px;">
+            	<div class="container2">
+    				<p>Famous beach in Chania</p>
+  				</div>
+            </div>
+            
+            <div class="polaroid">
+            <img class="modalImg" id="myImg3"  src="img/knossos.jpg" alt="Famous beach in Chania" style="width:100%;height:auto;max-width:250px;">
+            	<div class="container2">
+    				<p>Famous beach in Chania</p>
+  				</div>
+            </div>
+            
+            <div class="polaroid2">
+            <img class="modalImg" id="myImg4"  src="img/sitia.jpg" alt="Famous beach in Sitia" style="width:100%;height:auto;max-width:250px;">
+            	<div class="container2">
+    				<p>Famous beach in Sitia</p>
+  				</div>
+            </div>
+            
+         <div> <!-- end of third -->
+         
+            
+      </div>
+     </div>
+	</div>
+     
+  </div>
+  
+             
+        
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+   
+
+</div>
+
+
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+<script>
+// Get the modal
+    var modal = document.getElementById('myModal');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById('myImg1');
+    var img2 = document.getElementById('myImg2');
+	var img3 = document.getElementById('myImg3');
+	var img4 = document.getElementById('myImg4');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    img1.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+    
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+	
+	img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+	
+	img4.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>

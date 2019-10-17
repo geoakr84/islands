@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Milos</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img src="img/front_image.jpg" style="width:100%;height:300px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Milos</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;">
+            <p>
+            Known as the "Island of Colors" thanks to its jewel-colored waters and building painted in vivid primary tones, the horseshoe-shaped island of Milos floats serenely in the Aegean Sea. It was here that the world-famous Venus de Milo statue was discovered. Though she now holds court at the Louvre, Milos has other beauties to admire. There are dozens of beaches, all different colors and all different combinations of sand, stone and shell. Explore the ancient theater, catacombs and windmills in Tripiti village, then cap off your day with a cinematic sunset.</p></h5>
+            <p>
+           Nowadays Milos is a combination industrial and tourist island. The vast mineral deposits continue to be the wealth of Milos and it has been said that the reason tourism has been slow to take hold is because the people who own the mines don't want the Melians to get used to the 'easy life' of running hotels and restaurants because then they will never want to work in the mines. However with the popularity of the island with vacationing Greeks and the fact that you can't hide something as large and as beautiful as a Greek island forever you have to accept that sooner or later the mines will be worked by Albanians and other immigrants while the islanders discover that the business of tourism is also hard work. (Be sure to visit the Mineral and Mining Museum in Adamas)
+            </p>
+            <p>Sailing into Milos is almost as dramatic as sailing into the caldera of Santorini. The port of Adamas is inside a large bay and is considered the safest natural port in the Aegean. The Germans used it during the Second World War. It was so important to them that it was not liberated until the very end of the war, the same day as Berlin! As you enter the bay you pass on your left the village of Klima, famous for the boat houses right on the sea with their brightly painted doors and the living quarters on the upper floors. Adamas won't impress you with its beauty though parts of it are picturesque and in many ways is a true picture of Greek island life, similar to Ermouplis in Syros or Naxos town, only smaller. In the summer it has a busy waterfront lined with cafes, restaurants, ATM's and shops and features a mining museum as well as boat tours around the island that visit some of the most spectacular beaches in Greece. Because of the island's popularity with Greeks finding accommodation by just showing up is not a sure thing in the summer and booking in advance is not a bad idea. There are a number of good restaurants, as there are on most islands that cater to Greek clientele instead of just tourists. Despite the volcanic nature of Milos, which usually goes hand in hand with hot springs, there are several places around the island where there are hot springs. The most well known are the mineral baths in Adamas called Ta Loutra tou Lakkou, (Baths of the Pit) which was mentioned by Herodotus as a cure for skin diseases. It is currently recommended for neuro-arthritis and osteoarthritis, osteoporosis, muscle pain and neuralgia, and rheumatism.</p>
+            <p>The town of Plaka which is the true capital of the island is built on a hill overlooking the sea just 5 kilometers from Adamas. Plaka has the white-washed houses that people come to Greece to see, as well as a Frankish castle on the ancient acropolis, a folk art museum, an archaeology museum and a well preserved ancient theater which hosts the Milos Festival every July when the island is visited by Greek and International artists whose performances in such a spectacular setting are not easy to forget. In the nearby village of Tripiti are the Christian Catacombs, open from Tu-Sat 8:30 to 6:30 and Sunday 8:30 to 3:00 and regarded as one of the most important findings from the first years of Christianity. Nearby is the field where the famous 4th century statue of Aphrodite, otherwise known as the Venus de Milo was found by farmer George Kontrotas in 1820. There is a copy in the Archaeology Museum along with Neolithic, Mycenaean, Minoan and Hellenistic artifacts from the island. At the Plakiaki Gonia you can enjoy traditional Milos cooking and sign the petition to have the Venus de Milo returned to the island. And don't leave Plaka without visiting the Milos Sand Museum where you can see sand from all over the world!</p>
+            <p>The best way to see the beaches and dramatic coast of Milos with its spectacular volcanic rock formations is by excursion boat, which you can find in the port of Adamas. They leave at 9am and circle the island. Some of them stop on the nearby island of Kimilos for lunch and they all stop for swims along the way, returning at 8pm. If an 11 hour day seems like too much for you the Delfini leaves from the port below the Kypo Taverna on the south side of Milos at 11am and goes to Kleftiko, the most impressive of the rock formations, stopping on the way for a swim and returning at 2:30. If you wander around the harbor in the port of Adamas you will find several excursion boats and even some sailboats advertising their trips around the island with photos of where they go. If you don't have a mask and snorkel and flippers use whichever boat provides them. There is also a dive center in Pollonia for those who want to go scuba diving. A car or motor-cycle can get you pretty much all over the island which has an extensive road system if you are more of a land person.</p>
+        </div>
+      </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>
+
+

@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nisyros</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>   
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img src="img/front_image.jpg" style="width:100%;height:300px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Nisyros</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;">
+            <p>
+            Nisyros is one of the most beautiful Aegean islands, still untouched by the tourism growth. It is part of the Dodecanese group of islands, situated between Kos and Tilos. The island extends over a surface of 41 km and its coastline is 28 km long. It can be reached by ferry from Piraeus, Kos and Rhodes.
+            </p></h5>
+            <p>
+            According to mythology, it was created during the war between Gods and Giants. Poseidon chased the Giant Polyvotis down to Kos, cut a part of it and threw it to his enemy, sinking him forever in the bottom of the Aegean Sea. The legendary rock is the modern Nisyros and it is said that the volcano’s explosions are the angry breathing of the defeated Giant. These explosions shaped the island, which is considered to be the youngest volcanic centre in Greece, still active – along with the volcanoes of Milos, Santorini and Methana. During antiquity the island thrived on obsidian commerce, extracted by the inhabitants of Nisyros, from the nearby island, Gyali.
+            </p>
+            <p>
+            
+             <h3>Around the island</h3>
+
+             <h3>Nisyros’ villages</h3>
+           
+           <strong>MANDRAKI</strong> Apart from being the capital of the island, Mandraki is also its harbour. It is one of the biggest villages on Nisyros with many available tourism facilities available. Enjoy a stroll around the exquisite pebbled narrow streets and squares (most typical of all being the plateia Delfinion [square of Dolphins]), and take a close look at the white or coloured two-storeyed houses with wooden balconies. The houses are made of volcano rocks and insulated with pumice-stone. The nightlife is not very intense but you will surely have a good time in Mandraki, where there are little tavernas and some bars.
+            </p>
+           
+            <p>
+            <strong>Emporios</strong> Located 8 km E of Mandraki, Emporios stands out for its houses’ architecture. It flourished during the 20th century when it had many inhabitants, shops (blacksmith workshops, groceries, tailor-shops, coffee shops) and skilled stone makers. During the ‘60s a great part of the population moved to the village seaport, Palloi. </p>
+            
+            <p>
+            <strong>Nikia </strong>Porta is the main square of Nikia, where the church of Eisodion tis Theotokou [Presentation of Virgin Mary] is located; this is one of the most gorgeous churches of Greece! The square has an ellipsoid shape and pebbled floor designed by Paschalis Paschalakis, a famous artisan of the 19th century, born in Nisyros. Walking through the village, you will find some nice spots looking at the volcano. Nikia is located 14 km SE away from Mandraki.</p>
+		    <p>
+            <h3>Sights worth visiting:</h3>
+            <strong>The volcano.</strong> You may walk in the crater and watch the boiling holes. The most recent explosion took place in 1888, shaping a cylindrical pipe of volcano elements, with a diameter of at least 25 m. Polyvotis, the largest crater of the volcano, has a diameter of 260m and a depth of 30m. There are five younger craters, in the same area, the largest being “Stefanos" with a diameter of 30 m and a depth of 30m. The volcano surrounds a valley (caldera) 2,400m long and 950m wide. </p>
+
+			<p>
+            <strong>Paleokastro, </strong> a classical period acropolis of the ancient city. It is still in very good condition because of its high quality construction and represents one of the best fortification works of the ancient times, basaltic andesite (volcanic rock), one of the hardest rocks in the world. The main gate is composed by well-hewn stone blocks with a perfect fit of the connecting surfaces. The total length of the fortification is very big, as it surrounds the entire land-lubber site of the rocky hill above the south end of Mandraki.
+            </p>
+            <p>
+            The <strong>Castle of the knights</strong>, of St. John in Mandraki, built high on a rock at an altimeter of 150 meters. The castle is a reminder of the Knights of St. John having stepped foot on the island and built -in 1315- a magnificent castle in which nestles the Monastery of Panagia Spiliani dedicated to Kimisi of Theotokou (the Assumption).</p>
+        </div>
+      </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>
+
+
+
+

@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kos</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>   
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img src="img/front_image.jpg" style="width:100%;height:300px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Kos</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;">
+            <p>
+            The endless coasts with the turquoise waters, the vegetation, the affluent water springs, the ancient and medieval monuments, as well as the impressive Italian buildings feature Kos island; the third largest island of Dodecanese complex, located just 4 miles away from the Turkish coasts. The name «Kos» probably derives from the daughter of the mythical King Meropas, called Koos.
+            </p></h5>
+            <p>
+            Kos is the birthplace of Hippocrates «the father of medicine» (460-377 B.C) and was already inhabited during Neolithic Period  (5th - 4th millennium B.C). The Knights of St. John conquered the island during the 14th century, reinforcing the older castles and building new fortifications.  During Ottoman occupation, the island was attacked by several intruders (Knights, Venetians etc), while during Italian occupation (1912-1945) some really important, monumental public buildings were constructed.  The island was officially united with Greece in 1948. It extends over a surface of 290 km2; its coastline is 112 km and counts 31,000 inhabitants. 
+            </p>
+            <p>
+            
+             <h3>Walk through the city. Pay a visit to:</h3>
+           
+           The <strong>Medieval Castle</strong> (Nerantzia castle). It is located in the entrance of the port, in a place probably fortified during the Byzantine period (7th century). You can see the internal fence which has four round towers and the external one with its massive bastions. The two surrounding walls are interconnected with a bridge, which is constructed above the moat which separates the walls.
+            </p>
+           
+            <p>
+            The <strong>Eleftheria Square</strong> [Liberty], which is considered to be the center of the contemporary city. It is surrounded by three massive buildings inherited from the Italian era: The municipal market, the club (which was called Fascism Palace) and theArchaeological Museum (with a prehistoric collection, statues, mosaic floors taken from the Roman buildings of the ancient city), an imitation of roman spas. At the end of the square is the Defendar Mosque.</p>
+            
+            <p>
+            The <strong>ancient city</strong>, which used to be the capital of the island since 366 B.C. You can see the market, the Hellenistic Doric temple, Dionysus' altar, the port sanctuary and stoa [arcade], Hercules’ sanctuary, the ruins of the wall’s north part, the roman baths, the luxurious roman mansions with the reach mosaic floors, the roman resident as well as the roman conservatorium with a capacity of 750 seats.</p>
+		    <p>
+            The <strong>Platanos Square</strong> [Plane-tree] or else Lotzia Square, one of the most touristic points of the town. </p>
+
+			<p>
+            The <strong>Lotzia Mosque</strong> which was constructed in 1786 and upon its walls you can see incorporated pieces of ancient and medieval monuments.
+            </p>
+            <p>
+            <strong>Hippocrates’ Plane tree</strong>, right across the Lotzia Mosque. It was beneath the shadow of this tree that the great doctor used to teach his apprentices and examine his patients, therefore the tree is more than <strong>2,500 years old</strong>! The periphery of its trunk is more than 10m and its gigantic branches shadow the whole square.</p>
+        </div>
+      </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>
+
+
+
+

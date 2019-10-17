@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leykada</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3> </a>   
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakinthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaki</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img src="img/front_image.jpg" style="width:100%;height:300px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Leykada</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;">
+            <p>
+            Considered as the Caribbean of Greece, Lefkada island amazes visitors with the exotic blue colour of its beaches. Connected to the mainland through a small bridge, Lefkada can actually be accessed by car, so there is no need for ferry. This is the perfect place for families, couples and large groups of friends, as it has something for everyone. The beaches, on the western coast of Lefkada Greece, distinguish for the wonderful colour and the impressive landscape, particularly Porto Katsiki, Egremni and Kathisma. Around the island, visitors can find lovely villages with fish taverns by the sea and surrounded by lush greenery. Nidri, Vassiliki, Sivota, the Town and Agios Nikitas are beautiful places with special character each one.</p>
+</h5>
+            <p>
+Famous all over the world for the exotic beaches, Lefkada island is a fabulous place to visit for summer vacations. This island of the Ionian Sea, geographically located west of the Greek mainland, has the most amazing sea color. Beaches, like Porto Katsiki, Kathisma and Egremni, are among the most photographed places in Greece.
+            </p>
+            <p>        
+           Lefkada also has lovely seaside villages, like Sivota, Agios Nikitas and Vassiliki. In particular, the eastern side has family seaside villages, while the western side is dotted with wild beaches. Have a look in our Lefkada travel guide and find all information for your holidays. 
+            </p>
+           
+            <p>
+            The highlight on Lefkada island, part of the Ionian islands, is the exotic blue color of its beaches. Porto Katsiki, Egremni, Kathisma, Tsoukalades, Agios Nikitas and generally all the beaches on the western coast of Lefkada are just paradises on earth. However, the villages are also nice, with traditional style, green surroundings and restaurants with local dishes. </p>
+            
+            
+
+		    <p>
+            Among the most popular sights to visit in your Lefkada holidays are the waterfalls of Nidri and the Monastery of Panagia Faneromeni, on a hill above the Town. Most spots in Lefkada Greece offer gorgeous view to the Ionian Sea and the mainland of the country. This Lefkada travel guide offers all useful information that you need to know for your trip there. Holidays in Lefkada can be combined with other Greek islands, such as Corfu and Kefalonia.</p>
+
+            <p>
+            Windsurfing, kitesurfing, paragliding, scuba diving, flights in a prop plane, horseback riding, mountain biking, sailing around the surrounding islets like Skorpios… there is no end to the activities and sports activities and sports on offer here. You’ll explore the island, stay at luxurious or quaint and traditional hotels, eat at restaurants on the water. The welcoming Lefkada town will invite you to savour its culture by walking its alleyways, listening to its folk songs, enjoying bowls of Englouvi lentils on the feast day of Agios Donatas and meeting the famous bouranelous, the city dwellers for whom many angling is still their major hobby. - Immerse yourself in Lefkada’s magical world.</p>
+           <strong>Skorpios: Onassis’ island sanctuary</strong><br/>
+           <p>Near Nydri you’ll find Skorpios, one of the most famous islets in the world and erstwhile summer refuge of the tycoon Aristotle Onassis. He bought it in 1963 and decorated it with all types of trees and exotic plants. Liz Taylor, Richard Burton, Winston Churchill, kings, dukes, shipping magnates and, of course, Jackie O … all took part in famous parties and celebrations on Skorpios and on Onassis’ yacht, Christina, where they discovered the magic of the Ionian Sea. He was buried here in 1975.</p>
+        </div>
+      </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>
+
+
+
+
+
+

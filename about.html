@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<title>About me</title>
+
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 12px;
+}
+.about{
+	font-family: "Agency FB";
+	font-size:18px;
+	font-weight:500;
+	text-align:justify;
+}
+.newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+.con{
+	font-size:20px;
+	font-family: Candara;
+}
+#go {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+
+#frame{
+  display: block;
+  width:130px;
+}
+.essentials{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-shadow: 1px 1px #666666;
+	font-size:18px;
+	font-weight:500;
+}
+#essentials{
+	box-shadow: outset 3px 3px #CCCCCC;
+}
+#welcome{
+	text-align:center;
+	border-radius:25px;
+	
+}
+.eselinks:hover{
+	opacity:0.5;
+	color: #F30;
+}
+#boxes:hover p{
+	font-weight:bolder;
+}
+#boxes:hover img{
+	opacity:0.5;
+}
+.goframes{
+	position:relative;
+	left:16px;
+}
+.w3-hover-opacity {cursor: pointer;}
+
+#myNavbar{
+	position:relative;
+	left:20px;
+}
+#me{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	border: thick #666;
+	padding: 10px;
+	margin-top: 30px;
+}
+#text{
+	margin-left:20%;
+	margin-right:20%;
+	margin-bottom:20%;
+}
+#nam{
+	margin-top:30px;
+	margin-left:20%;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+<div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+</div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>   <!-- end of w3-padding-64 -->   
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px">
+
+<!-- Navbar (sit on top) -->
+  <div class="w3-top">
+  	<div class="w3-bar" id="myNavbar">
+    	<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button" style="font-size:18px; font-family: Impact, Charcoal, sans-serif"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="#essentials" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-th"></i>   ESSENTIALS</a>
+        <a href="#wheretogo" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif"><i class="fa fa-th"></i> WHERE TO GO</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-envelope"></i>  CONTACT</a>
+   </div>
+   
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    	<a href="index.html#essentials" class="w3-bar-item w3-button" onClick="toggleFunction()">ESSENTIALS</a>
+        <a href="index.html#wheretogo" class="w3-bar-item w3-button" onClick="toggleFunction()">WHERE TO GO</a>
+        <a href="index.html#footer" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
+    </div>
+ </div> <!-- end of w3-top navbar -->
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  
+    
+  
+  <!-- Top header -->
+  <div class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img class="w3-padding-24" src="img/front_image.jpg" style="width:100%;height:auto">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h2 class="w3-jumbo w3-hide-small"  style="text-shadow: 2px 2px">Live your myth</h2>
+        <h2 class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px">in Greece</h2>
+    </div>
+  </div>
+  
+<div class="w3-gray w3-padding-32 w3-margin-left">
+  
+  
+  
+  	<div class="w3-content"> 
+    	<h2 style="text-align:center;font-family:'Franklin Gothic Heavy'">About me</h2>
+        
+        <img class="center w3-border" src="img/me.jpg" oncontextmenu="return false;" id="me" style="width:100%;height:auto;max-width:300px;">  
+         <h4 id="nam" style="font-weight:800;font-size: 26px">George Akritidis</h4>
+        <div class="newspaper" id="text"> 
+        
+        <p class="about">I was born in Thessaloniki, Greece in 1984 where I also grew up and I studied Informatics in the Technological Educational College of Thessaloniki.
+        From September of 2016 I moved to Sweden where I study in Linnaeus University. The university is located in the Vaxjo, a small town in the southern part
+        of Sweden. Vaxjo is considered the most green city in Europe as it is surrounded by forests. In Linnaeus I am master degree student. The title of the master degree that I study is Social Media and Web Technologies. It entails the use of the modern technologies to create projects relative to social media and web apps.
+        As you can assume the main field in which I am interested on working is the creation of web pages. I am still a novice but my goal is to become a professional web developer. What describes me the most is that I am a teamplayer who strongly values collaboration within a team. In addition, I study programming languages for android and ios applications because I believe that smartphones will expand and inflitrate even more in our lifes. Afterall, software is the staging ground for the future.
+        </p>
+        <p class="about">
+        When my face isn't pressed against my computer screen I find myself working out a lot, watching movies and listening to movies. During the summers I work in Greece as a lifeguard. I enjoy doing this job
+        because it requires a lot of responsibility and training during the winter in order to keep your body in shape. The most important of course in this job is the 
+        feeling of confidence and satisfaction when you offer help to a person that is in need of help. Furthermore, I have the chance to meet numerous people from all around the world.
+        </p>
+        <p class="about">If you wanna contact me leave a message below, or sent me an email, or just visit me on Facebook, Instagram and Twitter</p>
+        </div>
+    </div>
+  
+  
+ 
+</div>  <!-- end of w3-gray-->
+
+<footer class="w3-padding-64 w3-light-gray w3-small w3-center" id="footer">
+	<div class="w3-row-padding">
+    
+    	<div class="w3-col s6 w3-margin">
+            <h1 style="font-size:28px;">Contact</h1>
+            <p class="w3-margin-left w3-left w3-margin-top con">Questions? Go ahead.</p>
+            <form class="w3-margin-left" target="_self" method="post" name="commenting" action="contact.php">
+                <p><input class="w3-input w3-border" type="text" id="name" placeholder="Name" name="Name" required></p>
+                <p><input class="w3-input w3-border" type="text" id="email" placeholder="Email" name="Email" maxlength="50" required></p>
+                <p><input class="w3-input w3-border" type="text" id="subject" placeholder="Subject" name="Subject" maxlength="100" required></p>
+                <p><textarea class="w3-input w3-border" rows="5" id="comment" placeholder="Message" name="Message" cols="50" maxlength="1000" required></textarea></p>
+                <button type="submit" class="w3-button w3-block w3-black" name="subForm">Send</button>
+            </form>
+        </div>
+        
+        
+        
+        <div class="w3-col s4 w3-justify w3-margin">
+             <h1 class="w3-center" style="font-size:28px;">Social Contacts</h1>
+             <div class="w3-padding-64 w3-left">
+                <a href="https://www.facebook.com/george.akritidis.79" target="_blank">
+                <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+                </a>
+                <a class="w3-margin-left" href="https://twitter.com/geoakr84?lang=el" target="_blank">
+                <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+                </a>
+                <a class="w3-padding" href="https://www.instagram.com/geoakr84/?hl=el" target="_blank">
+                <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+                </a>
+                <p class="w3-padding-16" style="font-size:16px;font-family: 'Cambria Math';"><i class="fa fa-fw fa-envelope"></i> giorgosakritidis596@gmail.com</p>
+             </div>
+        </div>
+        
+   
+</footer>
+
+  
+ </div> <!-- end of w3-main-->
+
+</div> <!-- end of w3-container -->
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+	
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function clearForm(){
+	document.getElementById("name").value="";
+	document.getElementById("email").value="";
+	document.getElementById("subject").value="";
+	document.getElementById("comment").value="";
+	
+}
+
+
+</script>
+
+
+  
+
+
+</body>
+</html>

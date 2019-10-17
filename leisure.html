@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Leisure</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.w3-hover-opacity {cursor: pointer;}
+
+#myNavbar{
+	position:relative;
+	left:20px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+ 
+ <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+  	<div class="w3-bar" id="myNavbar">
+    	<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button" style="font-size:18px; font-family: Impact, Charcoal, sans-serif"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="#essentials" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-th"></i>   ESSENTIALS</a>
+        <a href="#wheretogo" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif"><i class="fa fa-th"></i> WHERE TO GO</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-envelope"></i>  CONTACT</a>
+   </div>
+   
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    	<a href="#essentials" class="w3-bar-item w3-button" onClick="toggleFunction()">ESSENTIALS</a>
+        <a href="#wheretogo" class="w3-bar-item w3-button" onClick="toggleFunction()">WHERE TO GO</a>
+        <a href="#footer" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
+    </div>
+ </div> <!-- end of w3-top navbar -->
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img class="w3-padding-24" src="img/front_image.jpg" style="width:100%;height:auto">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      	<h3><strong>Leisure</strong></h3>
+        <p>There are a number of international organisations in the main cities and islands that arrange walks, social evenings, get-togethers and charity events.
+Activities, depending on your location, include walking, climbing, water sports, diving, sailing, fishing, flying, golf, horse riding, bowling, gym and dance classes.</p>
+        <p>The main cities and islands have their own cultural summer programmes organised by the local municipalities with weekly concerts, dance, exhibitions and theatre. Details from the local town hall ('dimos').
+
+'Panayiri' festivals are held to celebrate the Name Day/Saints Day of the local church. They take place all over the islands, and in villages on the mainland, at various times throughout the year.</p>
+		<p>Regular concerts are held in the cities and on the larger islands, particularly throughout the summer months, with Greek Pop and Rock, Classical, Greek and Cretan music. Posters around town and in the local newspapers advertise events.</p>
+        <p>Cinema is popular and there are cinemas throughout Greece. There are also open-air summer cinemas. All the latest film releases are shown. English language films are always shown in English with Greek subtitles.</p>
+        <p>There are a number of plays and productions throughout the year in theatres, particularly in Athens and Thessaloniki, which are all performed in Greek. There are also ballet, opera and musical recitals and these are advertised on boards outside the theatres, and in the local newspapers.</p>
+        <p>Cafes in the towns are mostly modern and trendy and are frequented throughout the day and late into the night as they also serve alcoholic drinks. There are numerous bars and clubs, some playing English music but many play Greek pop and bouzouki music.</p>
+        <p>
+        <h5><strong>Explore Greek coffee</strong></h5>
+        The practice of coffee drinking in Greece is a daily ritual. Greeks like to enjoy their coffee in various ways – with family at home, with friends at a bustling café, while reading the newspaper in the morning, or even outdoors by the ocean. Coffee is such an important part of daily life that coffee breaks can sometimes last longer than lunch breaks. You can order a cup of coffee at any of the local cafés in Greece. Cafés in Greece are of two types. Kafeterias are popular among the younger crowd, while kafeneios are the traditional cafés where the elderly men of the town sip their coffee. Those new to Greek coffee can start with the traditional local coffee or ellinikós kafés, which is really a version of the Turkish coffee that was adopted during the Ottoman occupation. 
+        </p>
+        <p>
+        <h5><strong>Meet the poet sandal-maker</strong></h5>
+        Stavros Melissinos is a well-known figure in Athens and around the world. Popularly called the ‘poet sandal-maker’, he has written several books of essays, plays, and poetry. His works have been translated into different languages, and his best-known work, ‘The Rubaiyat’, is part of the curriculum in many universities in the United States. What makes him even more interesting is that he runs a sandal shop in Agias Theklas in Athens, where he designs and makes sandals inspired by the footwear of the ancient Greeks. His shop attracts some big names in the world of art and culture. Even the Beatles are known to have visited the Poet’s sandal shop!
+        </p>
+        <p>
+        <h5><strong>Sailing in Santorini</strong></h5>
+        One of the best ways to explore the island of Santorini is by water, for which there are private and semi-private tours available. The 40 to 43 foot catamarans take you to the spectacular private beaches, colored rock formations and hot springs. You can also enjoy a seafood meal prepared by the crew. One of the most popular sailing tours here is the sunset tour that begins at 2.30 in the afternoon, from Ammoudi port of Oia. The catamaran sails towards the southern region of Santorini and makes the first stop at the Red Beach for some swimming and snorkeling. </p>
+    	<p>
+        <h5><strong>Island hopping</strong></h5>
+        The Cyclades is an excellent place for island hopping in Greece. Each island of the region has a unique character, traditions and history. Since most of them are quite compact, it is quite easy to explore them in a short period of time. There are about 220 islands in all, and the most popular ones are Delos, Mykonos and Santorini. In summer, there are many ferry companies that sail to the Cyclades islands. They start from Piraeus or Rafina, and travel to all the islands. 
+        </p>
+        <br>
+       <img class="w3-border w3-padding center" style="height:auto;max-width:500px;" src="img/leisure.webp">
+        </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>

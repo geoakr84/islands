@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kalymnos</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img src="img/front_image.jpg" style="width:100%;height:300px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Kalymnos</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;">
+            <p>
+            Kalymnos is located on the northern side of Dodecanese and close to the Turkish coasts. This island distinguishes for the wild rocky mountains, which is why it has developed as a rock climbing destination over the last years. In fact, an International Climbing Festival takes place in Kalymnos island every September. In the past, the locals used to make their living from sponge fishing. Although this activity has declined today, there are many sponge sellers at the beachfront of Pothia, the capital of the island. The beach resorts in Kalymnos Greece are nice and relaxing, while during your Kalymnos holidays you should not miss a day trip to the small island of Telendos, a popular nudist destination.
+            </p></h5>
+            <p>
+            Kalymnos is a relaxing family island with strong character. This place distinguishes for the picturesque architecture, the long tradition in sponge diving and the impressive rocks ideal for climbing. In fact, over the last years, rock climbing has largely developed on the island and even a climbing festival takes place there in autumn. Very popular places for climbing are the mountains on the northern side of Kalymnos and on the neighboring island of Telendos. Holidays in Kalymnos can be combined with other islands of Dodecanese, like Kos, Leros or Patmos. 
+            </p>
+            <p>
+            
+             <h3>What to do on Kalymnos</h3>
+           
+            The island of Kalymnos, in Greece, is one of the Greek islands of the Aegean Sea and it belongs to the Dodecanese islands group. Kalymnos island is an island with relaxing atmosphere and many interesting sightseeing. Over the last years, Kalymnos has developed as a rock climbing destination due to the wild mountains in the inland. There are many climbing clubs to offer courses and the neighbouring island of Telendos and also there is an International Climbing Festival taking place there every September. In fact, climbing is among the most perfect things to do on the island. 
+            </p>
+            
+            <p>
+            Kalymnos island is also a great place for beach holidays. The most popular beach resorts are found on the western side of the island, including Myrties, Kantouni and Emporios. They have crystal beaches and many tourist facilities. Sightseeing also includes a day trip to the island of Telendos with the naturist beaches and the secluded atmosphere. Do not also miss a visit to the Monastery of Agios Savvas with incredible view to Pothia Town and the Aegean Sea. 
+            </p>
+           
+            <p>
+            Kalymnos is best known as home of the world’s finest sponge divers. The sea has always been a focal point for island life and its colorful traditions and sense of community remain almost unchanged. Picturesque landscapes for walking, clear blue seas for snorkeling or scuba-diving, rock faces of unique quality for climbing and a warm-hearted hospitality are just some of the pleasures that await the visitor. Kalymnos is also a good base for visiting nearby islands. Patmos, Lipsi, Leros, Kos and Nisiros are all accessible for day trips.</p>
+            
+            <p>
+            It seems that the barren soil of the island together with the superb beauty of the depths of the Mediterranean have played a major role in moulding the character of the Kalymnian people. They are endowed with a diversity that combines a marked bluntness with a certain nobility of the soul. These traits can be said to resemble the nature of the Sponge itself which is found at a wide variety of depths, ranging from a few centimetres to the depths of the abyss at 8500 metres. There are 5000 different species of Sponge and they can vary in colour, size and quality; some are smooth and velvety; others can be rough and hard.</p>
+		    <p>
+            The university of ‘Gabriele d’Annunzio’ in Chietti, Italy, a contemporary and vibrant institution, suggested (1984) that a research centre for Hyperbaric Underwater Medicine should be established in Kalymnos. To support this idea, they wrote, “….what makes the island unique is the fact that the fishermen there have, for thousands of years, been diving for Sponges”. The point being that diving, whether by the old method of holding their breath or, as is done nowadays, by frogmen, diving has become second nature to them. As generation followed generation, they became divers and thus, both physically and mentally they became utterly familiar with the skill of diving. Therefore, Kalymnos would be a most fitting place to set up such an underwater organisation such as was proposed. The Kalymnians would not only appreciate its purpose but they would also expand and improve its operation. </p>
+
+			<p>
+            Today, however, things are quite different. Owing to a destructive disease which has devastated Sponge colonies all over the Mediterranean, the people of the island have been forced to turn to other kinds of fishing. Sponge boats have given way to vessels equipped to fish for Tuna and Swordfish, both of which are in demand.
+            </p>
+            <p>
+            Meanwhile, how has the society reacted to this enforced change? When they talked of Sponge diving, the saying was, “…you don’t come up empty handed. You either get them or they get you!”. So, what are they doing under these new circumstances?
+
+A great many families have emigrated abroad. Others have turned to jobs on the land. However, one thing is certain. They are all waiting, patiently waiting, for the moment when the Sponge fleet will set sail again and for the time when, once again they will hear the bells of the church of St. Nicholas, their patron saint, peal for joy at the safe homecoming of the fathers, brothers and sons.</p>
+        </div>
+      </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>
+
+
+
+

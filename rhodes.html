@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rhodes</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img src="img/front_image.jpg" style="width:100%;height:300px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h1 class="w3-jumbo w3-hide-small">Live your myth</h1>
+        <h1 class="w3-jumbo w3-hide-small">in Greece</h1>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Rhodes</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;">
+            <p>
+            Welcome to Rhodes, the capital of the Dodecanese, an island which is ideal not only for those who want to relax but also for those looking for an action-packed holiday! With its bright green hills, rich green valleys and uninterrupted line of golden beaches, Rhodes is truly a blessed place. Add in the excellent facilities for tourism, the island’s special blend of cosmopolitan and traditional, and numerous cultural and archaeological sites and you’ve got the perfect holiday destination.
+            </p></h5>
+            <p>
+            Thanks to its strategic position, Rhodes has been important since ancient times. The ancient city of Rhodes, the construction of which began in 407 BC, was designed according to the city planning system devised by the greatest city planner of antiquity, Hippodamus of Miletus. Rhodes soon developed into one of the most important seafaring and trading centres in the Eastern Mediterranean. When it became a province of the Roman, and later the Byzantine Empire, it initially lost its ancient glory. But in 1309 the Knights of Saint John of Jerusalem conquered Rhodes. They built strong fortifications to protect the island, turning it into an important administrative centre and a thriving multinational medieval city. In 1523 Rhodes was conquered by the Ottoman Turks, and the Greeks had to settle outside the city walls. During the Ottoman occupation, new buildings were erected within the Old Town, mainly mosques and baths. In 1912 Rhodes and the rest of the Dodecanese, were seized by the Italians. The new rulers embellished the city with magnificent buildings, wide roads and squares. The Palace of the Grand Master was rebuilt and the Street of the Knights was reconstructed in order to regain its medieval purity. It was not until 1948 that Rhodes officially became part of Greece. In 1988 the Medieval City of Rhodes was listed as a UNESCO World Heritage site.
+            </p>
+            <p>
+            
+             <h4>Old Town</h4>
+           
+           As you enter one of the largest medieval towns in Europe through the Gate of Freedom, it soon becomes obvious that the Old Town of Rhodes is a mosaic of different cultures and civilizations; rarely does a visitor have the chance to stroll within medieval walls and explore twenty-four centuries of history. The fascinating medieval fortress-like buildings, the bastions, walls, gates, narrow alleys, minarets, old houses, fountains, tranquil and busy squares make it feel like you have stepped back into medieval times. The Palace of the Grand Master is certainly the highlight of the Old Town. The Palace, originally a Byzantine fortress built at the end of the 7th century A.D., was converted in the early 14th century by the Knights of the Order of Saint John into the residence of the Grand Master of the order and the administrative headquarters of their state; now it has been turned into a museum. 
+            </p>
+           
+            <p>
+            The cobblestoned Street of the Knights, one of the best preserved medieval streets in Europe, is packed with medieval inns that used to play host to the soldiers of the Order of the Knights. At the end of the Street, in the Museum Square, stands the Hospital of the Knights, which houses the Archaeological Museum. Across the square is the Church of Our Lady of the Castle, the Orthodox Cathedral of Rhodes in Byzantine times that became the Catholic Cathedral when the Knights occupied the city. Now it hosts the Byzantine Museum. Polidorou Street leads to a square with outdoor cafés and restaurants. Moving on, you enter Sokratous Street – always buzzing with life thanks to its cluster of cafés and shops – which leads down from the Mosque of Suleiman the Magnificent towards the harbour. If you decide to take a detour and head off for Arionos Square, don’t forget to stroll around the “Turkish district”, where you will find the Mustafa Pasha Mosque and the 16th century “Yeni Hammam” (Turkish Baths). </p>
+            <h4>Outside the walls…</h4>
+            <p>
+            Outside the walls of the Old Town lies the “new” city, with its magnificent Venetian, neoclassic and modern buildings. Among the most remarkable buildings that keep the memories of the island's Italian period alive are the Post Office, constructed by the Italian architect Florestano di Fausto, the Prefecture of the Dodecanese, formerly the Italian Governor's Palace that resembles the Doge's Palace in Venice, Evangelismos Church (Church of the Annunciation), the Town Hall and the National Theatre.</p>
+		    <p>
+            A stroll around Mandráki, the small marina with the Rhodian deer statues at its entrance and the surrounding windmills, is an experience not to be missed. The multicultural character of Rhodes is also evident in this part of the city, since next to the Prefecture stands the Murat Reis Mosque with its elegant minaret. Enjoy the sun and the sea at cosmopolitan Elli beach at the northern tip of Rhodes town, which is lined with modern hotels. Here you will also find the beautifully renovated historic Grande Albergo delle Rose, which today operates as a Casino. A visit to the Aquarium, one of the most important marine research centres in Greece, is a must! In the underground aquarium, reminiscent of an underwater cave, the visitor can see many of the species living in the Aegean. </p>
+
+            <p>
+            On the other side of the city you can visit Rodíni Park, a true paradise with many peacocks, streams and paths amidst oleander bushes, cypress, maple and pine trees. Rodini is said to be the site of the famous School of Rhetoric, where prominent Greeks and Romans, including Julius Caesar, Cato the Younger, Cicero, Pompey, Brutus, Cassius and Marc Anthony, studied. Saint Stefanos Hill (known as Monte Smith) marks the site of the Acropolis, one of the most important centres of worship, education and recreation in ancient times on Rhodes. At the top of the hill you will find the remains of the Temple of Apollo, a Hellenistic stadium and a gymnasium.</p>
+        </div>
+      </div>
+     </div>
+
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>
+
+
+
+
+

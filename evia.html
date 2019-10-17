@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Crete</title>
+
+<link rel="stylesheet" src="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+body,td,th {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+
+#myNavbar{
+	position:relative;
+	left:20px;
+}
+
+div.polaroid {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(10deg);
+  opacity: 0.8;
+  transition: transform 1s;
+  transition-timing-function: ease;
+}
+
+div.polaroid2 {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(-10deg);
+  opacity: 0.8;
+  transition: transform 1s;
+  transition-timing-function: ease;
+}
+
+div.polaroid:hover {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(0deg);
+  transform: scale(1.1,1.1);
+  opacity: 1;
+  cursor:pointer;
+}
+
+div.polaroid2:hover {
+  margin-left:10%;	
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transform: rotate(0deg);
+  transform: scale(1.1,1.1);
+  opacity: 1;
+  cursor:pointer;
+}
+
+div.container2 {
+  padding: 10px;
+  margin-bottom:50%;
+  background-color:rgba(204,204,204,0.5);
+}
+
+/* Style the Image Used to Trigger the Modal */
+    .modalImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .modalImg:hover {opacity: 1;}
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 3; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+    
+    /* Add Animation - Zoom in the Modal */
+    .modal-content, #caption { 
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 50px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .modal-content {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                <!-- The Close Button -->
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                </div>
+
+<div class="w3-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:1;width:250px" id="mySidebar">
+
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="index.html" style="text-decoration:none"><h3 class="w3-wide"><b>Greek Islands</b></h3></a>    
+    </div>
+
+<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="crete.html" class="w3-bar-item w3-button">Crete</a>
+    <a href="evia.html" class="w3-bar-item w3-button">Evia</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Cyclades<i class="fa fa-caret-down"></i></a>
+   	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">      		
+         	<a href="andros.html" class="w3-bar-item w3-button w3-light-grey">Andros</a>
+            <a href="ios.html" class="w3-bar-item w3-button w3-light-grey">Ios</a>
+            <a href="mykonos.html" class="w3-bar-item w3-button w3-light-grey">Mykonos</a>
+            <a href="milos.html" class="w3-bar-item w3-button w3-light-grey">Milos</a>
+            <a href="naxos.html" class="w3-bar-item w3-button w3-light-grey">Naxos</a>
+            <a href="paros.html" class="w3-bar-item w3-button w3-light-grey">Paros</a>
+            <a href="santorini.html" class="w3-bar-item w3-button w3-light-grey">Santorini</a>        
+            <a href="syros.html" class="w3-bar-item w3-button w3-light-grey">Syros</a>
+      </div>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+    Dodekanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="karpathos.html" class="w3-bar-item w3-button w3-light-grey">Karpathos</a>
+            <a href="kalimnos.html" class="w3-bar-item w3-button w3-light-grey">Kalimnos</a>
+        	<a href="kos.html" class="w3-bar-item w3-button w3-light-grey">Kos</a>            
+            <a href="nisyros.html" class="w3-bar-item w3-button w3-light-grey">Nisyros</a>
+        	<a href="rhodes.html" class="w3-bar-item w3-button w3-light-grey">Rhodes</a>
+            <a href="symi.html" class="w3-bar-item w3-button w3-light-grey">Symi</a>
+           
+    	</div>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+    Eptanisa<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="corfu.html" class="w3-bar-item w3-button w3-light-grey">Corfu</a>
+        	<a href="zakinthos.html" class="w3-bar-item w3-button w3-light-grey">Zakynthos</a>
+            <a href="kefalonia.html" class="w3-bar-item w3-button w3-light-grey">Kefalonia</a>            
+        	<a href="leykada.html" class="w3-bar-item w3-button w3-light-grey">Leykada</a>
+            <a href="ithaki.html" class="w3-bar-item w3-button w3-light-grey">Ithaca</a>
+        </div>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
+    Other islands<i class="fa fa-caret-down"></i></a>
+    	<div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        	<a href="chios.html" class="w3-bar-item w3-button w3-light-grey">Chios</a>
+        	<a href="mytilini.html" class="w3-bar-item w3-button w3-light-grey">Mytilini</a>
+            <a href="ikaria.html" class="w3-bar-item w3-button w3-light-grey">Ikaria</a>
+            <a href="skiathos.html" class="w3-bar-item w3-button w3-light-grey">Skiathos</a>
+            <a href="skopelos.html" class="w3-bar-item w3-button w3-light-grey">Skopelos</a>
+            <a href="samos.html" class="w3-bar-item w3-button w3-light-grey">Samos</a>
+        </div>
+</nav>
+</div>      
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+ <div class="w3-main" style="margin-left:250px">
+ 
+ <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+  	<div class="w3-bar" id="myNavbar">
+    	<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button" style="font-size:18px; font-family: Impact, Charcoal, sans-serif"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="index.html#essentials" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-th"></i>   ESSENTIALS</a>
+        <a href="index.html#wheretogo" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif"><i class="fa fa-th"></i> WHERE TO GO</a>
+        <a href="index.html#footer" class="w3-bar-item w3-button w3-hide-small" style="font-size:18px; font-family:Impact, Charcoal, sans-serif">
+        <i class="fa fa-envelope"></i>  CONTACT</a>
+   </div>
+   
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    	<a href="index.html#essentials" class="w3-bar-item w3-button" onClick="toggleFunction()">ESSENTIALS</a>
+        <a href="index.html#wheretogo" class="w3-bar-item w3-button" onClick="toggleFunction()">WHERE TO GO</a>
+        <a href="index.html#footer" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
+    </div>
+ </div> <!-- end of w3-top navbar -->
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-display-container w3-container w3-padding-16 w3-margin-left">
+    <img class="w3-padding-24" src="img/front_image.jpg" style="width:100%;height:auto">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    	<h2 class="w3-jumbo w3-hide-small"  style="text-shadow: 2px 2px">Live your myth</h2>
+        <h2 class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px">in Greece</h2>
+    </div>
+  </header>
+  
+  <div class="container w3-sand w3-padding-32 w3-margin-left">
+  
+     <div class="w3-row-padding w3-padding-64 w3-container">
+  	  <div class="w3-content">
+      
+    	<div class="w3-row">
+        
+        <div class="w3-twothird" style="margin-left:0%;">
+        	<h1>Evia</h1>
+            <h5 class="w3-padding-32 w3-text-cyan" style="margin-left:0%;">Firs and tamarisks, imposing mountains and endless beaches, fish and game, “drakospita” (dragon houses) and lighthouses, the Edipsos thermal springs, old monasteries, waterfalls, ravines, industrial monuments, stone-built guesthouses, the Cavo Doro Cape… and one capital, Chalkida, friendly and affordable, ideal for endless promenades by the sea. Yes, Evia, one of the most impressive greek islands, with its unique beauty, looking out towards the Aegean Sea, holds the whole of Greece within its shores!</h5>
+           <p><b>Around Evia</b><br /> North, central or south? Whichever route you choose, touring around Evia will be a delight. In the north you will find countless fragrant pine forests, old monasteries such as Galataki and Osios David, the beautiful settlement of Limni Evias, the Drimonas waterfalls and Edipsos. In central Evia there is Dirfis and its alpine landscapes. Sumptuous beaches dominate  the north-east side of the island, along with the mediaeval towers at Messapia and the byzantine churches at Avlonas. In the southern part of the island discover the land of the winds, with the enigmatic “drakospita” (dragon houses), the Ohi mountain range, the enchanting Dimosaris gorge, the Eretria archaeological treasures and the mediaeval castles at Aliveri, Stira and Karistos.</p>
+           
+           <p><b>The best beaches of Evia</b><br />There is a magnificent beach hidden around every bend on  Evia. In the north, discover the beaches of Edipsos, Politikon, Limnionas, Kavos, Gregolimanos and, of course, everyone’s favorite, Agia Anna – Agkali. In central Evia you will find the famous Hiliadou with its lush vegetation, sand and pebbles of every shape and size and its sea cave that is just begging to be explored. The beach took its name from the small byzantine church of Panagia Hiliadou – meaning the thousandth –as, according to tradition, this was the thousandth church built by Empress Theodora. Here you will also find Mourteri beach, loved by wind  and kite-surfers, Eretria beach, Agios Merkourios, Kalamos and Korasida. In the south, the beaches of Nea Stira, Limnionas Stiron, Xrysi Ammos and the popular Figia will welcome you into their turquoise waters.
+
+</p>
+		<p><b>Famous thermal springs</b><br /> 
+Famous since antiquity thanks to the unique properties  of their waters, the Edipsos springs help heal the body and soul. To the never-ending line of emperors and roman generals that have visited the area’s baths, you may add 19th and 20th century prime ministers, writers and ship-owners. Immerse yourself in the healing waters, admire Thermae Sylla -a neoclassical masterpiece built around an impressive tower-  marvel at the old baths designed by Ernst Ziller, breath in the sea breeze and feel reborn!
+        
+        </p>
+        <p>
+        <b>Chalkida, the city of the “crazy waters”</b><br />
+        Honestly, the inhabitants of Chalkida are  totally sane , despite the peculiar behaviour of  the waters under the old Chalkida Bridge, which change direction on a whim every six hours. The reason for this phenomenon? The moon’s gravity, as well as the difference in sea level between the north and south Evoikos Gulfs. Fresh fish and sea food, endless promenades along the quay with its cafes and restaurants, important sights such as the Kokkino Spiti (Red House) of 1884, the House with the Statues, the archaeological museum and the Mayor’s Hall, whose architecture features baroque and Italian eclecticism elements, all make up the unique character of Evia’s sunny capital.
+        </p>
+        
+        <p>
+        <b>A bridge to behold!  </b><br />
+It has the power to attract the visitor. The new Chalkida Bridge, connecting the island of Evia with the rest of Greece since 1993, is a masterpiece – especially impressive at night, when it is all lit up. It is a suspension bridge of , 694.5m. long, of which 215m. are at a height of 35.5m. Its pylons are 90m. high  and its road is suspended by 144 wire cables. Admire it from all angles, especially when crossing it!
+</p>
+<p>
+For those who love adventure, Evia is a paradise on earth. In Chalkida you can kayak the turbulent Evripos waters. On Eretria’s mainland, at Malakonta, you can go horseback riding. At M. Nikolaos mountain lodge you can rest after hiking the area’s trails. In northern Evia you can walk the trail between the Drimonas waterfalls and the top of Ksiros Mountain. In southern Evia you can enjoy a four-hour hike along  Dimosaris gorge. Or you can walk up Ohi, a natural “balcony” overlooking all of the central Aegean. Finally why not delve into the mysteries of  the famous “drakospita” or dragon houses  at Palli Laka – the cyclopean constructions attributed to the pre-hellenic Dryopes, a tribe thought to have had supernatural powers.
+        </p>
+        </div> <!-- end of two-third -->
+        
+        <div class="w3-third images" style="margin-left:0%;">
+        
+        	<div class="polaroid">
+        		<img class="modalImg" id="myImg1"  src="img/chalkida.jpg" alt="Chalkida" style="width:100%;height:auto;max-width:250px;">
+                <div class="container2">
+    				<p>Chalkida city</p>
+  				</div>
+            </div>
+            
+            <div class="polaroid2">
+            <img class="modalImg" id="myImg2"  src="img/kirinthos.jpg" alt="Ancient Kirinthos" style="width:100%;height:auto;max-width:250px;">
+            	<div class="container2">
+    				<p>Ancient Kirinthos</p>
+  				</div>
+            </div>
+            
+            <div class="polaroid">
+            <img class="modalImg" id="myImg3"  src="img/chiliadou-beach.jpg" alt="Chiliadou beach" style="width:100%;height:auto;max-width:250px;">
+            	<div class="container2">
+    				<p>Chiliadou beach</p>
+  				</div>
+            </div>
+            
+            <div class="polaroid2">
+            <img class="modalImg" id="myImg4"  src="img/limnicity.jpg" alt="Limni city" style="width:100%;height:auto;max-width:250px;">
+            	<div class="container2">
+    				<p>Limni city</p>
+  				</div>
+            </div>
+            
+         <div> <!-- end of third -->
+      </div>
+     </div>
+    </div>
+     
+  </div>
+  
+  <div class="container w3-padding-32 w3-margin-left">
+    <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  </div>
+  
+ </div>
+  
+  
+
+</div>
+</body>
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc3() {
+    var x = document.getElementById("demoAcc3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myAccFunc4() {
+    var x = document.getElementById("demoAcc4");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+document.getElementById("myBtn2").click();
+document.getElementById("myBtn3").click();
+document.getElementById("myBtn4").click();
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myMap()
+    {
+      myCenter=new google.maps.LatLng(38.829431, 24.609972);
+      var mapOptions= {
+        center:myCenter,
+        zoom:6, scrollwheel: true, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    }
+
+</script>
+
+<script>
+// Get the modal
+    var modal = document.getElementById('myModal');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById('myImg1');
+    var img2 = document.getElementById('myImg2');
+	var img3 = document.getElementById('myImg3');
+	var img4 = document.getElementById('myImg4');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    img1.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+    
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+	
+	img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+	
+	img4.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmO9YYGAocizT-WpyK5N9m-7QZ7n_eL0E&callback=myMap"></script>
+</html>
+
